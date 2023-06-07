@@ -1,0 +1,44 @@
+{
+  "name": "web-scrapping",
+  "version": "1.0.0",
+  "description": "Eastern Mediterranean University CMSE 322 Project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --exec babel-node index.js",
+    "test": "jasmine"
+  },
+  "author": "Samet Sarıçiçek 19331159",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.21.0",
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-session": "^1.17.3",
+    "fastest-levenshtein": "^1.0.16",
+    "fuzzy-matching": "^0.4.3",
+    "helmet": "^6.1.5",
+    "joi": "^17.9.2",
+    "mysql2": "^3.2.0",
+    "node-cache": "^5.1.2",
+    "nodemon": "^2.0.22",
+    "pretty-error": "^4.0.0",
+    "puppeteer": "^19.11.1",
+    "sequelize": "^6.29.3",
+    "sequelize-cli": "^6.6.0",
+    "supertest": "^6.3.3",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "jasmine": "^4.6.0",
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,136 @@
+.sort-wrap {
+  width: 100%;
+  height: 2rem;
+  grid-column: 2/2;
+  grid-row: 2/4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #f6f7f8;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.hamburger {
+  display: none;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.hamburger:hover {
+  transform: scale(1.25);
+}
+
+.hamburger:active {
+  transform: scale(1.05);
+}
+
+.input-container {
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.input-dropdown {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+}
+
+.input-container input {
+  padding-inline: 2px;
+  outline: var(--primary-1);
+  border: 1px solid var(--primary-1);
+  border-radius: 4px;
+}
+
+input:focus + .input-dropdown {
+  display: block !important;
+}
+
+.input-dropdown li {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px;
+  text-overflow: ellipsis;
+}
+
+.input-dropdown li:hover {
+  background-color: #dddddd;
+}
+
+.input-container a {
+  height: 100%;
+}
+
+.search-button {
+  padding-inline: 3px;
+  font-size: 13px;
+  border-radius: 3px;
+  outline: transparent;
+  border: none;
+  background-color: var(--primary-1);
+  color: whitesmoke;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.search-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.search-button:active {
+  transform: scale(0.95);
+}
+.search-button:disabled {
+  filter: blur(1px);
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdown label {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.dropdown select {
+  border-radius: 3px;
+  outline: transparent;
+  width: 5rem;
+  font-size: 12px;
+  padding: 1px;
+  border: 1px solid rgb(199, 203, 206);
+  background-color: rgb(219, 219, 222);
+}
+
+.dropdown select:focus {
+  outline: var(--primary-1) solid 1px;
+}
+
+.dropdown select::-ms-expand {
+  background-color: rgb(168, 23, 23);
+}
+
+@media (max-width: 800px) {
+  .sort-wrap {
+    grid-column: 1/1;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

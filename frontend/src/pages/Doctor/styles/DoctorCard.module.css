@@ -1,0 +1,84 @@
+.card-container {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+
+.info-row:nth-child(1) {
+  gap: 0.5rem;
+}
+
+.info-row:nth-child(3) {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+p {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contact-container a {
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(226, 235, 240);
+  border-radius: 5px;
+  transition: background-color 0.1s;
+}
+.contact-container a:hover {
+  background-color: rgb(162, 162, 246);
+}
+.image {
+  width: 15rem;
+  height: 17rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-row:nth-child(4) .inf {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+.inf svg {
+  margin-right: 0.25rem;
+}

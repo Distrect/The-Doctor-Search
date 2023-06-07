@@ -1,0 +1,39 @@
+/* .wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow-x: scroll;
+  gap: 2rem;
+}
+
+.image {
+  width: 7rem;
+  height: 4rem;
+  object-fit: fill;
+  filter: grayscale(100%);
+} */
+
+.wrapper {
+  margin-top: 1rem;
+  width: 20rem;
+  height: 100%;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: repeat(autofill, 2rem);
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 1px;
+}
+
+.image {
+  border: 1px solid lightblue;
+  padding: 5px;
+  border-radius: 5px;
+}
